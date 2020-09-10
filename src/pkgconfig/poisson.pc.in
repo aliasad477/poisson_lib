@@ -1,0 +1,9 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: Poisson
+Description: multigrid pressure poisson solver
+Version: @VERSION@
+Libs: -L${libdir} -lpoisson@LIB_SUFFIX@ -lgrid@LIB_SUFFIX@
+Cflags: -I${includedir}
